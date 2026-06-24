@@ -231,43 +231,37 @@
         </div>
 
         <div class="form-box">
-          <form>
+          <form id="contactForm">
             <div class="form-grid">
               <div>
                 <label for="firstName">First name</label>
-                <input id="firstName" type="text" placeholder="Enter first name" />
+                <input id="firstName" type="text" name="firstName" placeholder="Enter first name" required />
               </div>
               <div>
                 <label for="lastName">Last name</label>
-                <input id="lastName" type="text" placeholder="Enter last name" />
+                <input id="lastName" type="text" name="lastName" placeholder="Enter last name" required />
               </div>
             </div>
 
             <div class="form-grid">
               <div>
                 <label for="email">Email address</label>
-                <input id="email" type="email" placeholder="Enter email address" />
+                <input id="email" type="email" name="email" placeholder="Enter email address" required />
               </div>
               <div>
                 <label for="phone">Phone number</label>
-                <input id="phone" type="tel" placeholder="Enter phone number" />
+                <input id="phone" type="tel" name="phone" placeholder="Enter phone number" required />
               </div>
             </div>
 
-            <!-- <div style="margin-bottom:16px;">
-              <label for="purpose">Purpose of enquiry</label>
-              <select id="purpose">
-                <option>Admissions</option>
-                <option>General enquiry</option>
-                <option>Academics</option>
-                <option>Visit request</option>
-              </select>
-            </div> -->
-
             <div style="margin-bottom:20px;">
               <label for="message">Message</label>
-              <textarea id="message" placeholder="Write your message here"></textarea>
+              <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
             </div>
+
+            <!-- safe to put key here, it is a public key -->
+            <input type="hidden" name="access_key" value="cd28579c-fb7e-4941-babc-666d551d1993">
+            <input type="hidden" name="to_email" value="adeyemi@ebunmsh.com">
 
             <button class="btn" type="submit" style="border:none; cursor:pointer;">Send Enquiry</button>
           </form>
@@ -286,5 +280,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
