@@ -108,7 +108,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--primary);
+  color: var(--white);
   border-bottom: 1px solid rgba(18, 49, 64, 0.08);
   backdrop-filter: blur(10px);
 }
@@ -142,7 +143,7 @@ a {
 .brand-text h1 {
   font-size: 1.12rem;
   line-height: 1.2;
-  color: var(--primary);
+  color: var(--white);
 }
 
 .brand-text p {
@@ -162,11 +163,11 @@ a {
 
 .nav a {
   font-weight: 700;
-  color: var(--primary);
+  color: var(--white);
 }
 
 .nav a:hover {
-  color: var(--accent);
+  color: var(--accent-2);
 }
 
 .hero {
